@@ -1,0 +1,2594 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header
+{
+    position: relative;
+}
+table, th, td 
+{
+    border-collapse: collapse;
+}
+
+.navbar 
+{
+    text-align: right;
+}
+.navbar ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.418);
+    overflow: hidden;
+    text-align: right;
+    transition: max-height 3s;
+}
+.navbar li
+{
+    padding: 30px;
+	display: inline-block;
+	font-size: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 0.7s;
+    border-bottom: solid 2px rgb(180, 212, 184, 0);
+}
+
+.navbar ul li:hover
+{
+    border-bottom: solid 2px black ;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.navbar a:hover
+{
+    color: rgb(167, 88, 88);
+}
+
+.icon i
+{
+    display: none;
+}
+input:focus 
+{
+    outline: none;
+}
+footer 
+{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-family: 'Courier New', Courier, monospace;
+}
+.footer-start h2
+{
+    padding: 60px;
+    text-align: center;
+}
+.footer1
+{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace; 
+}
+.footer1-1
+{
+    width: 70%;
+}
+.footer2
+{
+    display: flex;
+    justify-content: space-around;
+}
+.footer2-1 
+{
+    display: flex;
+}
+.footer3-1
+{
+    width: 50%;
+    margin-left: 10%;
+}
+.footer3-1 h3
+{
+    font-size: 24px;
+    padding-bottom: 50px;
+}
+.footer3-1 p
+{
+    color: white;
+    display: block;
+    margin-bottom: 30px;
+}
+.footer1-2
+{
+    padding-left: 7%;
+    border-style: none none none solid;
+}
+.footer1-2 p
+{
+    padding-bottom: 60px;
+    border-bottom: 3px white solid;
+}
+.footer1-2
+{
+    padding-bottom: 60px;
+}
+.footer-img
+{
+    color: white;
+    margin-top: 60px;
+    font-size: 35px;
+}
+#now
+{
+    color: rgb(255, 0, 0);
+}
+.GWSC
+{
+    position: absolute;
+    left: 7px;
+    top: 7px;
+}
+#GWSC
+{
+    height: 71px;
+    border-radius: 100%;
+    border: 1px black solid;
+}
+.GWSC-2
+{
+    display: none;
+    text-align: center;
+}
+.GWSC-2 img
+{
+    width: 70px;
+    height: 70px;
+}
+
+@media screen and (max-width: 1100px) 
+{
+    .footer1, .footer2, .footer2-1
+    {
+        flex-direction: column;
+    }
+    .GWSC
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color:rgba(180, 212, 184, 0.486);
+        text-align: center;
+        display: block;
+        border-bottom: 2px black solid;
+    }
+
+}
+    
+
+
+
+
+
+/*     all     */
+
+
+
+@media screen and (max-width: 1100px) 
+{
+    .navbar ul 
+    {
+        max-height: 0;
+    }
+
+    .navbar ul.active 
+    {
+        max-height: 1000px;
+    }
+
+
+    .navbar li 
+    {
+        padding: 30px;
+        display: block;
+        text-align: center;
+    }
+    .navbar li:hover
+    {
+        background-color: #4b484885;
+    }
+    .icon i
+    {
+        cursor: pointer;
+        display: block;
+        padding: 30px;
+        text-align: center; 
+        background-color:rgba(180, 212, 184, 0.486);
+    }
+    .icon:hover
+    {
+        border-style: none;
+        background-color: #4b484885;
+        border-bottom: solid 3px black;
+        transition: all 0.7s;
+        color: white;
+    }
+}
+
+/*      Responsive Menu      */
+
+
+
+
+
+
+
+
+
+
+
+/*          Customer Home         */
+
+
+
+
+.Popup-link
+{
+    padding: 15px;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    z-index: 1;
+}
+.fa-user
+{
+    color: white;
+    font-size: 30px;
+}
+.Popup-link :hover
+{
+    color: red;
+}
+
+.popup 
+{
+    position: fixed;
+    display: none; 
+    background: transparent;
+    right: 0;
+    bottom: 80px;
+    z-index: 1;
+}
+
+.popup a
+{
+    font-size: 20px;
+    color: rgb(241, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+.Home1
+{   
+    background-image: url(Image/Home2.jpg);
+    background-size: cover;
+    border-style: none none solid none;
+}
+
+.Home-Pad
+{
+    color: rgb(255, 255, 255);
+    padding-bottom: 20%;
+}
+.Home-box
+{
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+.Home-box h1
+{
+    font-size: 54px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 12%;
+    padding-bottom: 3%;
+}
+.Home-box p
+{
+    margin-left: 12%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    padding-bottom: 4%;
+}
+
+.Home-box a
+{
+    margin-left: 12%;
+    background-color: #ff9900;
+    color: rgb(255, 255, 255);
+    padding: 18px 35px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Home-Info1
+{
+    margin-bottom: 2%;
+}
+
+.Home-Info1 h1
+{
+    font-size: 60px;
+    margin-bottom: 1%;
+    font-family: cursive;
+}
+
+.Home-Info p 
+{
+    font-size: 20px;
+    margin-left: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#google_translate_element
+{
+    padding: 20px;
+    background-color: #F0F0F0;
+    text-align: center;
+}
+
+
+/* Styles for the slideshow container */
+.slideshow-container 
+{
+    display: block;
+    position: relative;
+}
+
+/* Styles for the individual slides */
+.slide 
+{
+    display: none;
+    animation-name: fadeInOut;
+    animation-duration: 4s;
+}
+/* Styles for the text captions */
+.text 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    padding: 10px;
+}
+.slideshow-container img
+{
+    width: 100%;
+}
+
+/* Styles for the navigation dots */
+.dots 
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: 20px;
+    left: 50%;
+}
+
+.dot 
+{
+    height: 10px;
+    width: 10px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.dot.active 
+{
+    background-color: #ff5100;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+.des
+{
+    background-color: rgba(169, 169, 169, 0.18);
+    border-style: none none solid none;
+
+}
+.des-intro
+{
+    padding: 2%;
+    border-style: solid;
+    text-align: center;
+    background-color: rgba(250, 235, 215, 0.658);
+}
+
+.Home-main
+{   
+    padding-left: 15%;
+    padding-right: 15%; 
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    background-size: cover;
+}
+.Home-sub
+{
+    padding: 6%;
+    color: rgb(4, 4, 4);
+}
+.Home-sub h1
+{
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Home-sub p
+{
+
+    font-size: 21px;
+}
+.Home-img img
+{
+    flex: 1;
+    height: 300px;
+    width: 450px; 
+    box-shadow: 20px 20px rgba(67, 99, 19, 0.689);
+    border-radius: 5px;
+}
+.Home-img:hover
+{
+    transform: scale(1.05);
+}
+.Home-context
+{   
+    padding-top: 7%;
+    padding-right: 10%;
+    padding-bottom: 7%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(169, 169, 169, 0.18);
+}
+.Home-context iframe
+{   
+    margin: auto;
+    border: none;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1250px) 
+{
+    .des
+    {
+        border: none;
+    }
+    .Home-main, .Home-context
+    {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      align-items: flex-start; /* Adjust alignment as needed */
+      border-style: none none solid none;
+    }
+    .Home-sub, .Home-img img
+    {
+      flex: none; /* Reset flex values for individual elements */
+      width: 100%; /* Make elements take up full width */
+      margin: 10px 0; /* Add spacing between elements */
+    }
+    .Popup-menu
+    {
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+/*          Customer Register         */
+
+.Register-wall
+{
+    background-image: url(Image/Customer2.jpg);
+    background-size: cover;
+}
+.Cregister
+{
+    padding: 10%;
+    padding-bottom: 2%;
+}
+.Cregisterform
+{
+    color: white;
+    border-style: solid;
+    padding: 5%;
+    padding-top: 4%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 20px;
+}
+.Cregisterform h1
+{
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-style: hidden hidden solid hidden;
+}
+.Cregisterform h2
+{
+    padding: 15px;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    width: auto;
+    text-align: center;
+    color: rgb(246, 230, 230);
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #302c2ca3;
+}
+
+.Cregisterform label
+{
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 13px;
+    margin-left: 10px;
+    color: white;
+}
+
+.Cregister input[type=text], .Cregister input[type=password], .Cregister input[type=number], .Cregister input[type=email]
+{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    margin-bottom: 3%;
+    padding-left: 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Cregister input[type=checkbox], input[type=radio]
+{
+    width: 16px;
+    height: 16px;
+}
+.Cregister input[type=file]
+{
+    width: 100%;
+    border-radius: 10px;
+    padding: 13px;
+    margin-bottom: 3%;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #717171 ;
+}
+
+
+.Cregister input[type=submit]
+{
+    margin-top: 7%;
+    margin-left: 33%;
+    height: 40px;
+    width: 33%;
+}
+
+.Cregister input[type=submit]:hover
+{
+    background-color: rgba(0, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 1140px)
+{
+    .Cregisterform
+    {
+        margin: 0px;
+    }
+}
+
+
+
+
+/*          CustomerLogin           */
+
+
+
+.Login-wall
+{
+    background-image: url(Image/Customer1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.CLogin
+{
+    padding: 10%;
+}
+
+.CLoginform
+{
+    color: rgba(255, 255, 255, 0.823);
+    border-style: solid;
+    box-sizing: border-box;  
+    padding: 5%;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    margin-left: 33%;
+    margin-right: 33%;
+    border-radius: 20px;
+}
+
+.CLoginform h1
+{
+    padding-bottom: 6%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-style: hidden hidden solid hidden;
+}
+
+.CLogin label
+{
+    display: inline-block;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 13px;
+    margin-left: 10px;
+}
+
+.CLoginform input[type=text], .CLoginform input[type=password], .CLoginform input[type=number], .CLoginform input[type=email]
+{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    margin-bottom: 3%;
+    padding-left: 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+.CLoginform .checkbtn
+{
+    width: 10%;
+    height: 30px;
+}
+.CLoginform input[type=submit]:hover
+{
+    background-color:rgb(231, 150, 38);
+    transform: scale(1.03);
+}
+.CLoginform input[type=submit]
+{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    height: 46px;
+    width: 100%;
+    font-size: 17px;
+    border: none;
+    transition: transform 0.3s ease;
+    background-color:rgb(255, 169, 48);
+}
+.CLoginform p
+{
+    margin-left: 20%;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.823);
+}
+.CLoginform a
+{
+    margin-left: 2%;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(231, 150, 38);
+}
+.CLoginform a:hover
+{
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1140px)
+{
+    .CLogin
+    {
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 11%;
+    padding-bottom: 11%;
+    }
+    .CLoginform 
+    {
+        margin: 5%;
+        padding: 20px;
+    }
+
+    /* Adjust input and label styles for smaller screens */
+    .CLoginform label 
+    {
+        font-size: 16px;
+    }
+
+    .CLoginform input[type="email"], .CLoginform input[type="password"] 
+    {
+        width: 100%;
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*          Customer Information          */
+.Most-Head
+{
+    background-color:rgba(180, 212, 184, 0.486);
+}
+.Info h1
+{
+    padding-top: 3%;   
+}
+.Info-Topic h1
+{
+    color: black;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding-bottom: 3%;
+    border-bottom: 2px black solid;
+}
+.Info-table
+{
+    padding-top: 3%;
+    padding-bottom: 3%;  
+    background-color: rgba(177, 177, 177, 0.692);   
+}
+
+.info-column 
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    width: 80%;
+}
+.Info-Item
+{
+    box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5%;
+}
+.Info-FRow
+{
+    display: flex;
+    background-color: #EDBB7E;
+}
+.Info-SRow .PImg
+{
+    width: 35%;
+}
+
+.FRow-Topic
+{
+    background-color: #EDBB7E;
+    width: 65%;
+}
+.FRow-Topic h1
+{
+    padding-left: 70px;
+    padding-top: 30px;
+    font-size: 47px;
+    background: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.FRow-Topic h3
+{
+    padding-top: 15px;
+    padding-left: 70px;
+    padding-bottom: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.FRow-Topic p
+{
+    padding-left: 70px;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Info-SRow
+{
+    display: flex;
+    background-color: white;
+}
+.SRow-Location
+{
+    margin: auto;
+    width: 45%;
+}
+.SRow-Location h2
+{ 
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+}
+.SRow-Location iframe
+{
+    display: block; 
+    margin: auto;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: transform 0.7s ease;
+}
+.SRow-Location iframe:hover
+{
+    transform: scale(1.2);
+}
+
+.SRow-Context
+{
+    border-style: none none none solid;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.SRow-Context legend
+{
+    padding-bottom: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
+    line-height: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.SRow-Context h2
+{
+    padding-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    line-height: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.More a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 14px 17px;
+    background-color: rgba(253, 63, 5, 0.519);
+    border-radius: 10px;
+}
+.More a:hover
+{
+    background-color: rgba(253, 117, 5, 0.681);
+}
+@media screen and (max-width: 700px)  
+{
+    .Info h1
+    {
+        padding: 25px;
+    }
+    .Info-table
+    {
+        padding: 0;
+    }
+    .info-column 
+    {
+        margin: 0;
+        width: 100%;    
+    }
+    .Info-FRow, .Info-SRow 
+    {
+        flex-direction: column;
+    }
+    .Info-SRow .PImg, .FRow-Topic, .SRow-Location, .SRow-Context
+    {       
+        width: 100%;
+        border: none;
+    }
+    .More a
+    {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+/*      Customer Review       */
+.Review-main
+{
+    padding: 2%;
+    background-color: #b8b2b228;
+}
+.Review-main h1
+{
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+}
+.Review-main legend
+{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.review-container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.review 
+{
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.1);
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.rate
+{
+    color: rgb(255, 145, 0);
+}
+.review.active 
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+.profile
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+.Review-Box
+{
+    padding-top: 5%;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-bottom: 15%;
+    background-color: rgba(179, 201, 144, 0.349);
+}
+
+.rating
+{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: left;
+    margin-left: 10%;
+}
+.rating > input /*hide radio button*/
+{
+    display: none;
+}
+.rating > label 
+{
+    cursor: pointer;
+    padding: 5px;
+    font-size: 30px;
+}
+.rating label
+{
+    padding: 10px;
+}
+.rating label:before 
+{
+    content: "\2605"; /* Unicode character for a star */
+}
+.rating input:checked ~ label 
+{
+    color: orange;
+}
+.rating span
+{
+    padding-bottom: 40px;
+    display: block;
+    text-align: left;
+    font-size: 17px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+}
+.Review-Form
+{
+    position: relative;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+}
+.Review-Form h1
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom: 100px;
+    margin-left: 10%;   
+}
+.Review-Form legend
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-bottom: 60px;
+    margin-left: 10%;
+}
+
+.Review-Form embed
+{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 1px black solid;
+}
+.Review-Form p
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 60px;
+    margin-left: 10%;
+}
+
+.Review-Form input[type=text]
+{
+    margin-top: 50px;
+    margin-left: 10%;
+    font-size: 17px;
+    padding: 12px;
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid red;
+}
+.Review-Form input[type=text]:focus 
+{
+    outline: none;
+}
+.Review-Form input[type=submit]
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: rgba(27, 25, 25, 0.911);
+    margin-top: 100px;
+    left: 50%;
+    color: white;
+    padding: 13px 30px;
+}
+.Review-Form input[type=submit]:hover
+{
+    margin-top: 98px;
+    background-color: rgba(27, 25, 25, 0.85);
+    box-shadow: 10px 10px 10px rgba(27, 25, 25, 0.85);
+}
+@media screen and (max-width: 700px)
+{
+    .Review-Form embed
+    {
+        top: 150px;
+    }
+    .Review-Box
+    {
+        padding: 10px;
+    }
+
+}
+
+
+
+
+
+
+/*      Customer Avability        */
+.Ava
+{
+    padding-top: 3%;
+    padding-bottom: 20%;
+    background-color: rgba(164, 164, 164, 0.3);
+    
+}
+.Ava-Text h1
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 35%;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 70px;
+    width: 30%;
+    border-bottom: 2px black solid;
+}
+
+.Search 
+{
+    margin-left: 32%;
+    width: 36%;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 12px;
+    border-radius: 25px;
+}
+.search-input 
+{
+    border: none;
+    background: none;
+    outline: none;
+    flex: 1;
+    padding: 10px;
+    font-size: 15px;
+    transition: width 0.4s;
+}
+.search-submit
+{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 2px;
+    padding: 10px;
+    background-color: #ff8800;
+    color: #fff;
+    border-radius: 100%;
+}
+.Search-Result
+{
+    background-color: black;
+    padding: 4%;
+}
+.Ava-main
+{
+    margin-top: 5%;
+}
+.Ava-container
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Ava-box
+{
+    width: 33%;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 3px 5px #00000041;
+}
+.Ava-box img
+{
+    border: black 2px solid;
+    box-shadow: 1px 1px 1px black;
+    width: 100%;
+    height: 500px;
+}
+.Ava-box h1
+{   
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.Ava-Info
+{   
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+.Ava-container a
+{
+    text-decoration: none;
+    border-radius: 7px;
+    color: white;
+    padding: 10px 15px;
+    background-color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.Ava-container a:hover
+{
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 700px) 
+{
+    .Search 
+    {
+        margin: 0;
+        width: 100%;
+    }
+    .Ava-box
+    {
+        width: 100%;
+    }
+    .Ava-container
+    {
+        flex-direction: column;
+    }    
+}
+
+
+
+
+
+
+/*          Feature         */
+.Feature-back
+{
+    background-color: #f5d255d6;
+    position: relative;
+}
+.Feature-All    
+{
+    background-color: #f5d255d6;
+}
+.Feature-topic
+{
+    padding: 5%;
+    text-align: center;
+}
+.Feature-head
+{
+    padding-bottom: 25px;
+}
+.Feature-main
+{
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.Feature-block
+{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.701);
+    width: 480px;
+    padding: 30px;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.1);
+}
+
+.Feature-block img
+{
+    width: 400px;
+    height: 280px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+.Feature-block h1
+{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Feature-block p
+{
+    line-height: 1.4;
+    font-size: 17px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+}
+.Feature-Wearable
+{
+    text-align: center;
+    border-top: 1px black solid;
+}
+.Feature-Wearable h1
+{
+    width: 100%;
+    background-color: white;
+    padding: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Wearable-pic
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.Text-Wearable
+{
+    text-align: center;
+}
+@media (max-width: 1140px)
+{
+    .Feature-main
+    {
+        flex-direction: column;
+    }
+    .Feature-block
+    {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .Feature-block img
+    {
+        width: 100%;
+    }
+
+
+
+}
+
+
+/*      Local       */
+.Local-box
+{
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+    width: 100%;
+    padding: 3%;
+}
+.Local-box h1
+{
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+}
+.Local-box p
+{
+    width: 350px;
+    margin: auto;
+    line-height: 2;
+}
+.Local-Info
+{
+    padding: 15px;
+    margin: auto;
+    width: 33%;
+}
+.Local-img
+{
+    display: flex;
+    gap: 20px;
+    width: 66%;
+}
+.Local-img img
+{
+    width: 33%;
+    border: 1px black solid;
+}
+
+
+@media screen and (max-width: 1100px) 
+{
+
+    .Local-box
+    {
+        text-align: center;
+        display: block;
+    }
+    .Local-box p, .Local-Info
+    {
+        margin: 0;
+    }
+    .Local-img, .Local-Info
+    {
+        display: block;
+        width: 100%;
+    }
+    .Local-img img
+    {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*          Admin Register            */
+
+.Admin-Head 
+{
+    background-color:rgba(0, 0, 0, 0.849);
+    text-align: right;
+}
+
+
+.Admin-Head li
+{
+    padding: 34px;
+	display: inline-block;
+	font-size: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: solid 3px rgb(180, 212, 184, 0);
+}
+
+.Admin-Head li:hover
+{
+    border-bottom: solid 3px rgb(255, 255, 255) ;
+}
+
+.Admin-Head a
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.Aregister
+{
+    background-image: url(Image/Admin1.jpg);
+    background-size: cover;
+    padding-top: 7%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 7%;
+}
+.Aregisterform
+{
+    border-color: rgba(255, 255, 255, 0.705);
+    border-style: solid;
+    border-radius: 30px;
+    padding: 50px;
+}
+.Aregister-File label
+{
+    margin-top: 5%;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Aregister-File
+{
+    text-align: center;
+    color: white;
+    margin-bottom: 3%;
+}
+.Aregister-block input[type=file]
+{
+    margin: 40px;
+    padding: 20px 30px;  
+    border-radius: 15px;
+    border-style: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.Aregister-row
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin: 40px;
+}
+.Aregister h2
+{
+    padding: 3%;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-style: hidden hidden solid hidden;
+    border-color: rgba(255, 255, 255, 0.705);
+}
+.Aregister-row
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+.Aregister-row label
+{
+    display: inline-block;
+    margin-left: 7px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Aregister-row input[type=text], .Aregister-row input[type=password], .Aregister-row input[type=email]
+{
+    width: 400px;
+    height: 50px;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-left: 10px;
+    border: none;
+    border-bottom: solid 2px white;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+}
+
+
+.Aregister-check input[type=checkbox]
+{
+    width: 16px;
+    height: 16px;
+}
+.Aregister-check
+{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2%;
+    padding: 2%;
+}
+.Aregister-check a
+{
+    color: rgba(180, 22, 180, 0.979);
+}
+.Aregister-check a:hover
+{
+    color: rgb(0, 17, 255);
+}
+.Aregister input[type=submit]:hover
+{
+    transform: scale(1.1);
+}
+.Aregister-check input[type=submit]
+{
+    margin-top: 30px;
+    padding: 17px 23px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    background-image: linear-gradient(to left, #9775f3b0, #789ae6);
+    color: white;
+    box-shadow: 3px 3px #789ae6;
+}
+
+
+@media screen and (max-width: 700px)
+{
+    .Admin-Head li
+    {
+        padding: 20px;
+    }
+    .Aregister
+    {
+        padding: 10px;
+    }
+    .Aregister-row
+    {
+        display: block;
+    }
+    .Aregister-File input[type=file]
+    {
+        margin-left: 0;
+    }
+    .Aregister-row input[type=text], .Aregister-row input[type=password], .Aregister-row input[type=email]
+    {
+        width: 250px;
+    }
+}
+
+
+
+
+
+/*          Contact         */
+.Contact-main
+{
+    background-color: #F2F1EF;
+    padding: 130px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.Contact-block
+{
+    display: flex;
+    box-shadow: 0px 6px 6px rgb(126, 126, 126);
+}
+.Contact-1
+{
+    width: 50%;
+    display: flex;
+    position: relative;
+}
+.Contact-1 img
+{
+    width: 100%;
+}
+.FL-contact
+{
+    position: absolute;
+    left: 10%;
+    bottom: 40px;
+}
+.FL-1 
+{
+    display: flex;
+    font-size: 18px;
+}
+.FL-1 p
+{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.Contact-2 
+{
+    width: 50%;
+    padding: 40px;
+}
+.Contact-form h1
+{
+    text-align: center;
+}
+.Contact-form label
+{
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Contact-form input
+{
+    display: block;
+}
+.Contact-form input[type=text], .Contact-form input[type=email]
+{
+    margin-top: 10px;
+    width: 100%;
+    padding: 7px;
+    font-size: 19px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Contact-form textarea
+{
+    padding: 7px;
+    margin-top: 10px;   
+    width: 100%;
+    height: 100px;
+    display: block;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Contact-form input[type=submit]
+{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+    padding: 13px 24px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #4471D8;
+}
+@media screen and (max-width:700px) 
+{
+    .Contact-block, .Contact-1, .Contact-2 
+    {
+        display: block;
+        width: 100%;
+    }
+    .Contact-main
+    {
+        padding: 0px;
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+/*          Customer Booking         */
+
+
+.Booking-Main img
+{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.Booking-context
+{
+    background-color: white;
+    position: relative;
+    width: 90%;
+    left: 5%;
+    top: 730px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 6px gray;
+    margin-bottom: 58%;
+}
+.Booking-context h1
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 35px;
+    text-align: center;
+    background-color: #FF7300;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.Booking-flex
+{
+    padding: 40px;
+}
+.book-Info p
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.book-Info i
+{
+    font-size: 14px;
+}
+.booking-org
+{
+    display: flex;   
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.booking-org
+{
+    border-bottom: 4px black solid;
+    padding: 50px 40px;
+}
+.booking-topic1
+{
+    width: 65%;
+}
+.booking-topic1 legend
+{
+    font-size: 28px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.booking-topic1 .fa-star
+{
+    color: red;
+}
+.bk-main
+{
+    display: flex;
+    justify-content: left;
+}
+.bk-1
+{
+    width: 50%;
+}
+.bk-1 p
+{
+    padding-bottom: 30px;
+}
+.book-des 
+{
+    margin-top: 40px; 
+}
+.book-des b
+{
+    margin-left: 13px; 
+    font-size: 17px;
+}
+.book-des p
+{
+    margin-top: 20px;
+    margin-left: 13px;
+}
+
+.booking-topic2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    border-style: none none none solid;
+}
+.booking-topic2 iframe
+{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+.De-Info
+{
+    padding: 80px 40px;
+}
+.De-Info:nth-child(2)
+{
+    border-bottom: 4px black solid;
+}
+.De-Info h2
+{
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 50px;
+}
+.De-Info h2 i
+{
+    color: orangered;
+    padding: 20px;
+    font-size: 18px;
+}
+.De-Info2
+{
+    display: flex;
+    text-align: center;
+    gap: 40px;
+}
+.De-Info2 img
+{
+    border-radius: 10px;
+    border: 1px black solid;
+    width: 390px;
+    height: 250px;
+}
+@media screen and (max-width: 700px) 
+{
+    .Booking-Main img
+    {
+        position: absolute;
+        display: block;
+    }
+    .Booking-context
+    {
+        display: block;
+        left: 0;
+        top: 170px;
+        width: 100%;
+        padding: 0;
+    }
+    .Booking-flex, .booking-org, .booking-topic2, .De-Info2, .bk-main
+    {
+        flex-direction: column;
+    }
+    .booking-topic1, .booking-topic2, .bk-1, .book-des
+    {
+        width: 100%;
+    }
+    .booking-topic2
+    {
+        border: none;
+    }
+    .De-Info2 img
+    {
+        width: 100%;
+    }
+}
+
+
+
+
+
+.AB
+{
+    position: fixed;
+    left: 0;
+    bottom: 122px;
+    width: 100%;
+    padding: 25px;
+    text-align: center;   
+    background-color: white;
+    border-style: none none solid none;
+    box-shadow: 0px -3px 3px gray;
+}
+.Booking-action 
+{
+    background-color: rgb(255, 115, 0);
+    position: fixed;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+}
+.Booking-date
+{
+    border: 2px black solid;
+    padding: 10px;
+}
+.Booking-action input[type=date], .Booking-action label
+{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+.quantity-selector
+{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 115, 0);
+    padding: 5px;
+    width: 11%;
+}
+.quantity-label 
+{
+    color: black;
+}
+.quantity-input
+{
+    width: 11px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(255, 115, 0);
+    color: black;
+}
+.quantity-button 
+{
+    background: rgb(255, 115, 0);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.quantity-button:hover 
+{
+    background: #0056b3;
+}
+.Booking-cal
+{
+    font-size: 17px;
+    border: 2px black solid;
+    padding: 10px;
+}
+.Booking-cal input[Type=text]
+{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 2px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.Booking-action input[type=submit]
+{
+    background-color: rgb(102, 102, 102);
+    color: rgb(255, 255, 255);
+    border: none;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    padding: 11px 16px;
+    font-size: 17px;
+}
+.Booking-action input[type=submit]:hover , .Cal button:hover
+{
+    border: 2px black solid;
+}
+@media screen and (max-width:700px) 
+{
+    .Booking-action
+    {
+        display: block;
+    }
+    .Booking-date, .Booking-cal, .quantity-selector
+    {
+        margin: 10px;
+    }
+    .Booking-action input[type=submit]
+    {
+        margin-top: 20px;
+        left: 35%;
+        bottom: 0px;
+        position: relative;
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+/*          Admin Login            */
+
+
+.Alogin
+{
+    background-image: url(Image/Admin1.jpg);
+    background-size: cover;
+    padding: 10%;
+}
+
+.Aloginform
+{
+    color: rgba(255, 255, 255, 0.863);
+    border-style: solid;
+    padding: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 20px;
+}
+
+.Aloginform h1
+{
+    padding-bottom: 6%;
+    text-align: center;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-style: hidden hidden solid hidden;
+}
+
+.Aloginform label
+{
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.Aloginform input[type=password], .Aloginform input[type=email]
+{
+    width: 100%;    
+    height: 50px;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: solid 2px white;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+}
+.ALogin-last
+{
+    margin-top: 50px;
+    text-align: center;
+}
+.ALogin-last a
+{
+    color: white;
+}
+.ALogin-last a:hover
+{
+    color: blue;
+}
+.ALogin-last input[type=submit]
+{
+    margin-top: 40px;
+    padding: 12px 21px;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 1300px) 
+{
+    .Aloginform
+    {
+        margin: 0;
+        width: 100%;
+    }
+    .Aloginform h1
+    {
+        padding-top: 10%;
+    }
+    .Aloginform input[type=email], .Aloginform input[type=password] 
+    {
+        width: 90%;
+    }
+}
+
+
+/*          Admin DashBoard           */
+
+
+
+.info-box
+{
+    border-radius: 7px;
+    padding: 2%;
+    width: 15%;
+    opacity: 0.8;
+    border-style: solid;
+    margin-left: 85%;
+    text-align: right;
+}
+.info-box p
+{
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    color: blue;
+}
+.info-box input
+{
+    text-align: center;
+    font-size: 15px;
+    height: 30px;
+    background-color: rgb(234, 236, 71);
+}
+
+
+.Dash
+{   
+    display: flex;
+    justify-content: right;
+    gap: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 3%;
+    padding-left: 3%;
+    background-color: #F9FAFC;
+}
+.AProfile-box
+{
+    width: 25%;
+    padding: 40px 60px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+}
+.AProfile-box img
+{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.AProfile-box p
+{
+    font-size: 22px;
+    padding-top: 25px;
+    padding-left: 10px;
+}
+.AProfile-box b
+{
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 5px;
+    color: #00c29b;
+}
+.AP-Dot
+{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: #00c29b;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.ADashboard h1
+{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    padding: 4%;
+    color: skyblue;
+}
+.nManage
+{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+    width: 75%;
+}
+.Manage-List
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+.AMan 
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    width: 25%;
+    border-radius: 14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #ffffffca;
+    box-shadow: 3px 6px 9px rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease;
+}
+.AMan img
+{
+    width: 60px;
+    height: 60px;
+}
+.AMan p
+{
+    padding-top: 20px;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.AMan legend
+{
+    padding-top: 10px;
+    color: rgba(140, 136, 136, 0.449);
+    font-size: 20px;
+}
+
+.Admin-Table
+{
+    width: 75%;
+    background-color: #ffffffca;
+    box-shadow: 3px 6px 9px rgba(0, 0, 0, 0.2);
+}
+.Admin-Table table
+{
+    border: none !important;
+    width: 100%;
+}
+.Admin-Table td
+{
+    padding: 17px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.Admin-Table th
+{
+    padding: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: white;
+    background-color: #01987A;
+}
+.Admin-Table table a
+{
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #009751;
+}
+.Admin-Table table a:hover
+{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.Management-box
+{
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+}
+.Management-box table
+{
+    width: 100%;
+}
+.Management-box th
+{
+    text-align: center;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    background-color: #01987A;
+    color: white;
+}
+
+.Management-box td
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 22px;
+    padding: 30px;
+}
+.Management-box td:hover
+{
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+}
+.Management-box a
+{
+    color: #01987A;
+    text-decoration: none;
+}
+@media screen and (max-width:700px) 
+{
+    .AMan, .AProfile-box, .Management-box, .Admin-Table, .Manage-List, .Dash, .nManage
+    {
+        width: 100%;
+    }
+    .Dash, .Manage-List
+    {
+        display: block;
+    }
+    td,tr,table,th
+    {   
+        display:inline-block;
+        padding:10px;
+        width:100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+/*          Campsite & PitchType          */
+
+.Box
+{
+    padding-top: 10%;
+    padding-bottom: 11%;
+    padding-right: 30%;
+    padding-left: 30%;
+}
+
+.CAMP-Pitch
+{
+    padding-top: 7%;
+    padding-bottom: 9%;
+    border-radius: 25px;
+    border-style: solid;
+}
+.CAMP-Pitch h2
+{
+    text-align: center;
+    padding-bottom: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.CAMP-Pitch label
+{
+    display: inline-block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding-right: 10%;
+    margin-bottom: 10px;
+    margin-left: 11%;
+    margin-top: 5%;
+}
+.CAMP-Pitch input[type=text]
+{
+    margin-left: 10%;
+    padding-left: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+}
+.CAMP-Pitch input[type=submit]
+{
+    background-color: rgba(240, 248, 255, 0.771);
+    margin-top: 2%;
+    margin-left: 40%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    width: 20%;
+    border-radius: 5px;
+}
+.CAMP-Pitch input[type=submit]:hover
+{
+    background-color: rgba(0, 255, 255, 0.66);
+}
+
+.Campsite-Table
+{
+    padding:5%;
+    background-color: aquamarine;
+    border-style: solid none none none;
+}
+.Campsite-Table h2
+{
+    text-align: center;
+    padding-bottom: 3%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+}
+.Campsite-Table table
+{
+    padding: 0;
+    width: 100%;
+    background-color: aqua;
+}
+.Campsite-Table table td
+{
+    padding: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    border-style: solid;
+    text-align: center;
+}
+.Campsite-Table table th
+{
+    padding: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-style: solid;
+    border-style: solid;
+    text-align: center;
+}
+
+
+
+
+
+
+/*          Pitch         */
+.Pitch-box
+{
+    border-style: solid;
+    border-radius: 25px;
+    padding: 5%;
+}
+.Pitch-box h1
+{
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Pitch-box label
+{
+    display: inline-block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.Pitch-box input[type=text], .Pitch-box input[type=number]
+{
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+}
+.Pitch-box input[type=file]
+{
+    padding: 14px;
+    width: 90%;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.548);
+}
+.Pitch-box input[type=submit]
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10%;
+    margin-left: 38%;
+    margin-bottom: 4%;
+    width: 24%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(13, 187, 129, 0.525);
+}
+
+.Pitch-box input[type=submit]:hover
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0, 255, 255, 0.649);
+    box-shadow: 1px 1px black;
+}
+.Pitch-box select
+{
+    margin-left: 20px;
+    padding: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Pitch-box input[type=radio]
+{
+    margin-left: 70px;
+    width: 16px;
+    height: 16px;
+}
+
+
+/*      Admin Booking       */
+.Check-Book 
+{
+    display: flex;
+    padding: 40px 0px;
+    justify-content: left;
+    border: 2px black solid;
+    background-color: #F5DEBC;
+}
+.Check-Book h1
+{
+    width: 100%;
+    padding-left: 5%;
+    text-align: center;
+}
+.Check-Book p
+{
+    margin: auto;
+    width: 5%;
+}
+.Check-Booking table
+{
+    border-style: none solid solid solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+.Check-Booking td
+{
+    padding: 30px;
+    background-color: #ECC197;
+}
+.Check-Booking th
+{
+    padding: 30px;
+    background-color: #F5DEBC;
+    border-bottom: 2px black solid;
+}
+.Check-Booking tr
+{
+    border-bottom: 1px solid gray;
+}
